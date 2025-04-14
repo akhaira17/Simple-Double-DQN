@@ -12,20 +12,18 @@ This repository contains a clean implementation of the **Double Deep Q-Network (
 
 Double DQN modifies the Q-learning target as:
 
-\[
-\text{Target} = r + \gamma Q_{\text{target}}(s', \arg\max_a Q_{\text{online}}(s', a))
-\]
+`Target = r + γ * Q_target(s', argmax_a Q_online(s', a))`
 
 This decouples action selection and evaluation, reducing overoptimism in action-value estimates.
 
-## 📁 Files
+## Files
 
 - `double_dqn.py`: Main training loop and neural network
 - `exploration_strategy.py`: Epsilon decay handling
 - `replay_buffer.py`: Experience replay buffer implementation
 - `LICENSE`: MIT license for open use and modification
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
